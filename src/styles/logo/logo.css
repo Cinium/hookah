@@ -1,0 +1,27 @@
+.logo {
+	display: inline-block;
+	position: relative;
+	width: 250px;
+	height: 150px;
+}
+
+.logo__image {
+	background-color: #6c525b;
+	padding: 27px 10px 30px;
+}
+
+.logo::after {
+	content: 'Дым Кудрявый';
+
+	font-family: Montserrat;
+	color: #e3e7ef;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	white-space: nowrap;
+
+	position: absolute;
+	bottom: 27px;
+	left: 84px;
+}

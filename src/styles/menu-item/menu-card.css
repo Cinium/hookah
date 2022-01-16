@@ -1,0 +1,158 @@
+.menu-card {
+	width: 380px;
+	border: 4px solid #cfd2d9;
+	box-sizing: border-box;
+	padding: 45px 30px;
+}
+
+.menu-card:first-of-type {
+	margin: 0;
+}
+
+.menu-card__body {
+	padding: 0;
+	list-style: none;
+}
+
+.menu-card__head {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+}
+
+.menu-card__section {
+	margin-bottom: 23px;
+}
+
+.menu-card__section-name {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 18px;
+	color: #2b2d33;
+	margin: 0 0 12px;
+}
+
+.menu-card__name {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 21px;
+	color: #2b2d33;
+	margin: 0;
+}
+
+.menu-card__price {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 21px;
+	text-align: right;
+	color: #6c525b;
+	margin-left: 10px;
+	white-space: nowrap;
+}
+
+.menu-card__property {
+	margin: 0;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 19px;
+	color: #2b2d33;
+	margin-bottom: 6px;
+	margin-top: 6px;
+	white-space: normal;
+}
+
+.menu-card__property:last-of-type {
+	margin-bottom: 0;
+}
+
+.menu-card__property:first-of-type {
+	margin-top: 0;
+}
+
+.menu-card__property_hilighted {
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.menu-card__property-note {
+	margin: 0 0 17px;
+}
+
+.menu-card__note {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	color: #2b2d33;
+	margin: 22px 0 0;
+}
+
+.menu-card__cigars-li {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #2b2d33;
+
+	margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+	.menu-card {
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.menu-card {
+		min-width: 236px;
+		padding: 46px 15px;
+		box-sizing: content-box;
+	}
+
+	.menu-card__name {
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.menu-card__section-name {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.menu-card__price {
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	.menu-card__property {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.menu-card__property-note {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.menu-card__note {
+		font-size: 14px;
+		line-height: 20px;
+		white-space: normal;
+	}
+
+	.menu-card__cigars-li {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}

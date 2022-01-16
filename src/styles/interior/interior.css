@@ -1,0 +1,57 @@
+.interior {
+	background: linear-gradient(rgba(48, 51, 59, 0.94), rgba(48, 51, 59, 0.94)),
+		url('../../images/interior/interiorBG.png');
+
+	padding-top: 62px;
+	padding-bottom: 70px;
+}
+
+.interior__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	max-width: 1200px;
+	margin: 0 auto 45px;
+}
+
+.interior__gallery {
+	margin-left: auto;
+	max-width: 1500px;
+}
+
+.interior__button {
+	width: 34px;
+	height: 43px;
+	font-size: 19px;
+	line-height: 22px;
+	background: transparent;
+	padding: 0;
+	border: 1px solid #4d515d;
+	box-sizing: border-box;
+	color: #6e7483;
+
+	transition: all 0.1s linear;
+}
+
+.interior__button:first-of-type {
+	margin-right: 10px;
+}
+
+.interior__button:hover {
+	cursor: pointer;
+	color: #d5d9e3;
+	border: 1px solid #777b8a;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.interior__head {
+		padding: 0 20px;
+	}
+
+	.interior__gallery {
+		margin-left: 20px;
+		max-width: 100%;
+	}
+}

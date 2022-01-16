@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Hookah</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="./src/index.css"
+		/>
+		<link rel="icon" type="image/png" href="./src/images/favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__content">
+				<div class="header__head">
+						<div class="logo">
+							<img src="./src/images/logo.svg" alt="лого" class="logo__image" />
+						</div>
+
+						<ul class="header__socials header__socials_desktop">
+							<li class="header__social-item">
+								<a href="#" class="lab la-vk header__social-link"></a>
+							</li>
+							<li class="header__social-item">
+								<a href="#" class="lab la-instagram header__social-link"></a>
+							</li>
+							<li class="header__social-item">
+								<a href="#" class="lab la-facebook-f header__social-link"></a>
+							</li>
+						</ul>
+
+						<div class="burger-menu">
+							<input id="burger-toggle" type="checkbox" />
+				
+							<label class="burger-menu__button" for="burger-toggle">
+								<span
+									class="burger-menu__icon"
+								></span>
+							</label>
+				
+							<ul class="burger-menu__menu">
+								<li class="burger-menu__item header__menu-item">
+									<a href="#about" class="header__menu-link">О клубе</a>
+								</li>
+								<li class="burger-menu__item header__menu-item">
+									<a href="#interior" class="header__menu-link">Интерьер</a>
+								</li>
+								<li class="burger-menu__item header__menu-item">
+									<a href="#menu" class="header__menu-link">Меню</a>
+								</li>
+								<li class="burger-menu__item header__menu-item">
+									<a href="#advantages" class="header__menu-link">Преимущества</a>
+								</li>
+								<li class="burger-menu__item header__menu-item">
+									<a href="#news" class="header__menu-link">Новости</a>
+								</li>
+								<li class="burger-menu__item header__menu-item">
+									<a href="#contacts" class="header__menu-link">Контакты</a>
+								</li>
+
+								<ul class="header__socials header__socials_hidden">
+									<li class="header__social-item">
+										<a href="#" class="lab la-vk header__social-link"></a>
+									</li>
+									<li class="header__social-item">
+										<a href="#" class="lab la-instagram header__social-link"></a>
+									</li>
+									<li class="header__social-item">
+										<a href="#" class="lab la-facebook-f header__social-link"></a>
+									</li>
+								</ul>
+							</ul>
+							
+						</div>
+
+						<nav class="header__nav">
+							<ul class="header__menu">
+								<li class="header__menu-item">
+									<a href="#about" class="header__menu-link">О клубе</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#interior" class="header__menu-link">Интерьер</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#menu" class="header__menu-link">Меню</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#advantages" class="header__menu-link">Преимущества</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#news" class="header__menu-link">Новости</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="#contacts" class="header__menu-link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+				</div>
+
+				<h1 class="header__title">Самый шикарный курительный клуб Урала</h1>
+
+				<div class="header__contacts">
+					<address class="header__phone">
+						<i class="las la-phone header__phone-icon"></i>
+						+7 (343) 298-98-88
+					</address>
+
+					<div class="header__time-container">
+						<i class="las la-clock header__time-icon"></i>
+						<span class="header__time">
+							вс-чт с
+							<time datetime="16:00">16:00</time>
+							до
+							<time datetime="00:00">00:00</time>
+						</span>
+						<span class="header__time">
+							пт-сб с
+							<time datetime="16:00">16:00</time>
+							до
+							<time datetime="04:00">04:00</time>
+						</span>
+					</div>
+
+					<div class="header__location">
+						<i class="las la-map-marker header__location-icon"></i>
+						<span class="header__location-text"> Екатеринбург, </span>
+						<span class="header__location-text"> БЦ Высоцкий, 50 этаж </span>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__background">
+				<div class="header__background_left"></div>
+				<div class="header__background_right"></div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="about" id="about">
+				<div class="about__container">
+						<div class="about__text">
+							<h2 class="about__title title">Возраждаем традицию</h2>
+							<p class="about__paragraph paragraph">
+								Сигара в достойной компании, оттененная бокалом бренди, всегда
+								была не только обязательным атрибутом джентльмена, но и данью
+								традициям. Поклонники сигар встречались в курительных клубах,
+								обсуждали последние новости и вершили судьбы мира. Прошло время,
+								и теперь традицию курительных клубов возрождает «Дым кудрявый» в
+								Екатеринбурге.
+							</p>
+						</div>
+						
+					<div class="about__sections">
+						<img
+							src="./src/images/about/hookah.png"
+							alt="кальян"
+							class="about__image"
+						/>
+						<div class="about__section">
+							<h3 class="about__section-title">Услуги</h3>
+							<p class="about__section-paragraph">
+								Серьезная сигарная карта и достойный выбор кальянов – standart,
+								premium или de luxe. Всегда в наличии элитный алкоголь, который
+								составляет отличную партию сигарам. Всем, кто за рулем бармен
+								предложит авторский чай.
+							</p>
+						</div>
+						<div class="about__section about__section-entertainment">
+							<h3 class="about__section-title">Развлечения</h3>
+							<p class="about__section-paragraph">
+								В клубе «Дым кудрявый» установлены плазменные панели, на которых
+								можно посмотреть спортивный матч. Также в гостевом зале вы
+								найдете шахматы и шашки, в том числе интересные авторские
+								коллекции.
+							</p>
+						</div>
+						<div class="about__section">
+							<h3 class="about__section-title">Для кого</h3>
+							<p class="about__section-paragraph">
+								Курительный клуб №1 «Дым кудрявый» создан для деловых и
+								неформальных встреч. В отличии от традиционных английских
+								курительных клубов, заведение в Екатеринбурге ждет и
+								джентльменов, и леди.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="interior" id="interior">
+				<div class="interior__container">
+					<div class="interior__head">
+						<h2 class="title title_dark interior__title">Интерьер</h2>
+						<div class="interior__buttons">
+							<button
+								type="button"
+								class="scroll-button interior__button_left"
+							>
+								<i class="las la-angle-left"></i>
+							</button>
+							<button
+								type="button"
+								class="scroll-button interior__button_right"
+							>
+								<i class="las la-angle-right"></i>
+							</button>
+						</div>
+					</div>
+					<div class="gallery interior__gallery">
+						<img
+							src="./src/images/interior/interior1.png"
+							alt=""
+							class="gallery__image"
+						/>
+						<img
+							src="./src/images/interior/interior2.png"
+							alt=""
+							class="gallery__image"
+						/>
+						<img
+							src="./src/images/interior/interior3.png"
+							alt=""
+							class="gallery__image"
+						/>
+						<img
+							src="./src/images/interior/interior4.png"
+							alt=""
+							class="gallery__image"
+						/>
+						<img
+							src="./src/images/interior/interior1.png"
+							alt=""
+							class="gallery__image"
+						/>
+						<img
+							src="./src/images/interior/interior2.png"
+							alt=""
+							class="gallery__image"
+						/>
+						<img
+							src="./src/images/interior/interior3.png"
+							alt=""
+							class="gallery__image"
+						/>
+						<img
+							src="./src/images/interior/interior4.png"
+							alt=""
+							class="gallery__image"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="menu" id="menu">
+				<div class="menu__container">
+					<h2 class="menu__title title">Меню</h2>
+
+					<div class="menu__switches">
+						<button
+							class="menu__button menu__button_active"
+							id="menu-branded"
+							type="button"
+						>
+							Фирменные кальяны
+						</button>
+						<button class="menu__button" id="menu-cigars" type="button">
+							Сигары и сигарилы
+						</button>
+						<button class="menu__button" id="menu-classic" type="button">
+							Классические кальяны
+						</button>
+
+						<img
+							src="./src/images/menu/ashtray.svg"
+							alt="пепельница"
+							class="menu__image"
+						/>
+
+						<div class="menu__scroll-buttons">
+							<button
+									type="button"
+									class="scroll-button menu__scroll-button_left"
+								>
+									<i class="las la-angle-left"></i>
+								</button>
+								<button
+									type="button"
+									class="scroll-button menu__scroll-button_right"
+								>
+									<i class="las la-angle-right"></i>
+								</button>
+						</div>
+					</div>
+					
+
+					<div class="menu__cards menu-branded">
+						<article class="menu-card ">
+							<div class="menu-card__head">
+								<h3 class="menu-card__name">«Баунти»</h3>
+								<span class="menu-card__price">3000 &#8381;</span>
+							</div>
+
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted">Добавки: </span>
+								шоколад, молоко, кокосовый сироп
+							</p>
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted">Чаша: </span>
+								ананас
+							</p>
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted">Крепость: </span>
+								средняя
+							</p>
+						</article>
+
+						<article class="menu-card">
+							<div class="menu-card__head">
+								<h3 class="menu-card__name">«Мохито»</h3>
+								<span class="menu-card__price">3000 &#8381;</span>
+							</div>
+
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted">Добавки: </span>
+								мята, лайм, белый ром и много-много льда
+							</p>
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted"
+									>Чаша на выбор:
+								</span>
+								яблоко, апельсин, грейпфрут
+							</p>
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted">Крепость: </span>
+								крепкий
+							</p>
+						</article>
+						<article class="menu-card">
+							<div class="menu-card__head">
+								<h3 class="menu-card__name">«Пина колада»</h3>
+								<span class="menu-card__price">3000 &#8381;</span>
+							</div>
+
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted">Добавки: </span>
+								молоко, ананасовый сок, кокосовый сироп, лед
+							</p>
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted">Чаша: </span>ананас
+							</p>
+							<p class="menu-card__property">
+								<span class="menu-card__property_hilighted">Крепость: </span>
+								средняя
+							</p>
+						</article>
+					</div>
+
+					<div class="menu__cards menu__cards_hidden menu-cigars">
+						<article class="menu-card ">
+							<div class="menu-card__head">
+								<h3 class="menu-card__name">Куба</h3>
+							</div>
+							<ul class="menu-card__body">
+								<li class="menu-card__cigars-li">Cohiba Panatelas</li>
+								<li class="menu-card__cigars-li">Cohiba Siglo II</li>
+								<li class="menu-card__cigars-li">Cohiba Siglo IV</li>
+								<li class="menu-card__cigars-li">Cohiba Siglo V</li>
+								<li class="menu-card__cigars-li">Cohiba Robustos</li>
+								<li class="menu-card__cigars-li">H. Upmann Magnum</li>
+								<li class="menu-card__cigars-li">Hoyo De Mont. Epicure №</li>
+								<li class="menu-card__cigars-li">Montecristo №4</li>
+								<li class="menu-card__cigars-li">Partagas Serie №4</li>
+								<li class="menu-card__cigars-li">
+									Romeo & Julieta Churchliss.
+								</li>
+								<li class="menu-card__cigars-li">Romeo & Julieta №2</li>
+							</ul>
+						</article>
+						<article class="menu-card">
+							<div class="menu-card__head">
+								<h3 class="menu-card__name">Доминикана</h3>
+							</div>
+							<ul class="menu-card__body">
+								<li class="menu-card__cigars-li">
+									CT Reserva Decadencia Churchill
+								</li>
+								<li class="menu-card__cigars-li">
+									Arturo Fuente Anejo №77 Shark
+								</li>
+								<li class="menu-card__cigars-li">
+									Davidoff Escurio Gran Perfecto
+								</li>
+								<li class="menu-card__cigars-li">Davidoff WSC Churchill</li>
+								<li class="menu-card__cigars-li">Zino Platinum XS</li>
+								<li class="menu-card__cigars-li">Zino Platinum Barrel</li>
+								<li class="menu-card__cigars-li">Macanudo Cafe Ascots</li>
+								<li class="menu-card__cigars-li">Macanudo Maduro Ascots</li>
+							</ul>
+						</article>
+						<article class="menu-card">
+							<div class="menu-card__head">
+								<h3 class="menu-card__name">Никарагуа</h3>
+							</div>
+							<ul class="menu-card__body">
+								<li class="menu-card__cigars-li">Nub Sun Grown 460 Tubos</li>
+							</ul>
+						</article>
+					</div>
+
+					<div class="menu__cards menu__cards_hidden menu-classic">
+							<article class="menu-card ">
+								<div class="menu-card__head">
+									<h3 class="menu-card__name">Кальяны на глиняной чаше</h3>
+								</div>
+								<div class="menu-card__body">
+									<div class="menu-card__section">
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Standart: </span>
+											<span class="menu-card__price"> 1200 &#8381;</span>
+										</p>
+										<p class="menu-card__property-note">
+											<span class="menu-card__property_hilighted">Крепость: </span>
+											 легкий
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Premium: </span>
+											<span class="menu-card__price">1500 &#8381;</span>
+										</p>
+										<p class="menu-card__property-note">
+											<span class="menu-card__property_hilighted">Крепость: </span>
+											 крепкий
+										</p>
+									</div>
+									<div class="menu-card__section">
+										<h4 class="menu-card__section-name">Замена чаши</h4>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Standart: </span>
+											<span class="menu-card__price"> 900 &#8381;</span>
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Premium: </span>
+											<span class="menu-card__price"> 1200 &#8381;</span>
+										</p>
+									</div>
+								</div>
+							</article>
+							<article class="menu-card">
+								<div class="menu-card__head">
+									<h3 class="menu-card__name">Кальяны на фруктовой чаше</h3>
+								</div>
+								<div class="menu-card__body">
+									<div class="menu-card__section">
+										<h4 class="menu-card__section-name">Апельсин</h4>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Standart: </span>
+											<span class="menu-card__price"> 1600 &#8381;</span>
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Premium: </span>
+											<span class="menu-card__price">1900 &#8381;</span>
+										</p>
+									</div>
+									<div class="menu-card__section">
+										<h4 class="menu-card__section-name">Яблоко</h4>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Standart: </span>
+											<span class="menu-card__price"> 1600 &#8381;</span>
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Premium: </span>
+											<span class="menu-card__price">1900 &#8381;</span>
+										</p>
+									</div>
+									<div class="menu-card__section">
+										<h4 class="menu-card__section-name">Грейпфрут</h4>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Standart: </span>
+											<span class="menu-card__price"> 1900 &#8381;</span>
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Premium: </span>
+											<span class="menu-card__price">2300 &#8381;</span>
+										</p>
+									</div>
+									<div class="menu-card__section">
+										<h4 class="menu-card__section-name">Ананас</h4>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Standart: </span>
+											<span class="menu-card__price"> 2200 &#8381;</span>
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Premium: </span>
+											<span class="menu-card__price">2700 &#8381;</span>
+										</p>
+									</div>
+							</article>
+							<article class="menu-card">
+								<div class="menu-card__head">
+									<h3 class="menu-card__name">Добавки в колбу</h3>
+								</div>
+								<div class="menu-card__body">
+									<div class="menu-card__section">
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Вино:</span>
+											<span class="menu-card__price">600 &#8381;</span>
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Мята:</span>
+											<span class="menu-card__price">100 &#8381;</span>
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Молоко:</span>
+											<span class="menu-card__price">200 &#8381;</span>
+										</p>
+										<p class="menu-card__property">
+											<span class="menu-card__property_hilighted">Сок в ассортименте:</span>
+											<span class="menu-card__price">300 &#8381;</span>
+										</p>
+									</div>
+								</div>
+				
+								<p class="menu-card__note">Вы можете добавить в кальян любой алкоголь из барной карты ресторана Panorama A.S.P.</p>
+							</article>
+					</div>
+				</div>
+			</section>
+			<section class="advantages" id="advantages">
+				<div class="advantages__wrapper">
+					<div class="advantages__container">
+					<h3 class="advantages__title title title_dark">У нас уютно</h3>
+					<ul class="advantages__list">
+						<li class="advantages__item">
+							<div class="advantages__point-wrapper">
+								<div class="advantages__point"></div>
+							</div>
+							<p class="advantages__paragraph">Шикарный вид на город с 50-го этажа БЦ «Высоцкий»</p>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__point-wrapper">
+								<div class="advantages__point"></div>
+							</div>
+							<p class="advantages__paragraph">Авторские миксы, которые меняются каждый месяц
+								и способны удовлетворить каждого требовательного гостя</p>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__point-wrapper">
+								<div class="advantages__point"></div>
+							</div>
+							<p class="advantages__paragraph">Уникальная атмосфера уединения и комфорта</p>
+						</li>
+						<li class="advantages__item">
+							<div class="advantages__point-wrapper">
+								<div class="advantages__point"></div>
+							</div>
+							<p class="advantages__paragraph">Персонал — подготовленные мастера своего дела</p>
+						</li>
+					</ul>
+
+					<img src="./src/images/advantages/leaveImage.svg" alt="лист" class="advantages__image">
+					</div>
+				</div>
+				<img src="./src/images/advantages/advantagesBackground.png" alt="интерьер" class="advantages__background">
+			</section>
+			<section class="news" id="news">
+				<div class="news__container">
+					<div class="news__head">
+						<h2 class="title news__title">Новости</h2>
+						<div class="news__buttons">
+							<button
+								type="button"
+								class="scroll-button scroll-button_light news__button_left"
+							>
+								<i class="las la-angle-left"></i>
+							</button>
+							<button
+								type="button"
+								class="scroll-button scroll-button_light news__button_right"
+							>
+								<i class="las la-angle-right"></i>
+							</button>
+						</div>
+					</div>
+					<div class="news__feed gallery">
+					</div>
+				</div>
+			</section>
+			<section class="restaurant" id="restaurant">
+				<div class="restaurant__container">
+					<div class="restaurant__text">
+						<h2 class="restaurant__title">Наш клуб входит в состав ресторана Panorama ASP</h2>
+						<p class="restaurant__subtitle">Поэтому гости могут не только насладиться дымным, но и попробовать самые разнообразные коктейли, а также вкусно поесть</p>
+					</div>
+					
+					<button class="restaurant__button">Подробнее о ресторане <i class="las la-long-arrow-alt-right"></i></button>
+				</div>
+			</section>
+			<section class="contacts" id="contacts">
+				<img src="./src/images/contacts/map.png" alt="карта" class="contacts__map">
+
+				<div class="contacts__container">
+					<h2 class="title contacts__title">Контакты</h2>
+
+					<address class="contacts__phone">
+						<i class="las la-phone contacts__icon"></i>
+						+7 (343) 298-98-88
+					</address>
+
+					<div class="contacts__location">
+						<i class="las la-map-marker contacts__icon"></i>
+						<span class="contacts__location-text">Екатеринбург, ул. Малышева 51,
+							БЦ Высоцкий, 50 этаж</span>
+					</div>
+
+					<div class="contacts__time-container">
+						<i class="las la-clock contacts__icon"></i>
+						<div class="contacts__time-wrapper">
+							<span class="contacts__time">
+							вс-чт с
+							<time datetime="16:00">16:00</time>
+							до
+							<time datetime="00:00">00:00</time>
+						</span>
+						<span class="contacts__time">
+							пт-сб с
+							<time datetime="16:00">16:00</time>
+							до
+							<time datetime="04:00">04:00</time>
+						</span>
+						</div>
+					</div>
+
+					<div class="contacts__links">
+						<button type="button" onclick="location.href='#' " href="#" class="contacts__link"><i class="contacts__icon lab la-facebook-f"></i> Facebook</button>
+						<button type="button" onclick="location.href='#' " href="#" class="contacts__link"><i class="contacts__icon lab la-instagram"></i>Instagram</button>
+					</div>
+
+					<img src="./src/images/contacts/lighter.svg" alt="" class="contacts__image">
+				</div>
+			</section>
+		</main>
+
+		<template class="news-card-template">
+			<div class="news-card">
+				<img src="" alt="" class="news-card__image">
+				<span class="news-card__date"></span>
+				<h4 class="news-card__title"></h4>
+			</div>
+		</template>
+
+		<script type="module" src="./src/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+.scroll-button {
+	width: 34px;
+	height: 43px;
+	font-size: 19px;
+	line-height: 22px;
+	background: transparent;
+	padding: 0;
+	border: 1px solid #4d515d;
+	box-sizing: border-box;
+	color: #6e7483;
+
+	transition: all 0.1s linear;
+}
+
+.scroll-button:first-of-type {
+	margin-right: 10px;
+}
+
+.scroll-button:hover {
+	cursor: pointer;
+	color: #d5d9e3;
+	border: 1px solid #777b8a;
+}
+
+.scroll-button_light {
+	border: 1px solid #585e67;
+	color: #2b2d33;
+}
+
+.scroll-button_light:hover {
+	border: 1px solid #aeb2ba;
+	color: #8e9199;
+}

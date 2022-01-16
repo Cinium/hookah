@@ -1,0 +1,41 @@
+.gallery {
+	white-space: nowrap;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery:hover {
+	cursor: pointer;
+}
+
+.gallery__image {
+	width: 360px;
+	height: 410px;
+
+	margin-right: 30px;
+	pointer-events: none;
+}
+
+.gallery__image:last-child {
+	margin: 0;
+}
+
+@media screen and (max-width: 769px) {
+	.gallery__image {
+		width: 307px;
+		height: 350px;
+		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 424px) {
+	.gallery__image {
+		width: 230px;
+		height: 262px;
+	}
+}

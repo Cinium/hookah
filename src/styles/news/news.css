@@ -1,0 +1,32 @@
+.news {
+	background-color: #E3E5EA;
+	padding: 112px 0;
+}
+
+.news__container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.news__head {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 42px;
+}
+
+.news__buttons {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+	.news {
+		padding: 72px 20px;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+
+	.news__container {
+		max-width: none;
+	}
+}

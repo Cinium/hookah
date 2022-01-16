@@ -1,0 +1,143 @@
+.contacts {
+	background-color: #E3E5EA;
+	display: flex;
+}
+
+.contacts__container {
+	padding: 6.778% 4% 7.222%;
+    width: 44.45%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contacts__time-container {
+	display: flex;
+	max-width: 220px;
+}
+
+.contacts__title {
+	margin-bottom: 36px;
+}
+
+.contacts__phone {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 21px;
+	color: #2b2d33;
+}
+
+.contacts__image {
+	position: absolute;
+	top: 97px;
+	left: 363px;
+}
+
+.contacts__map {
+	max-width: 55.55%;
+	object-fit: cover;
+}
+
+.contacts__location {
+	display: flex;
+	max-width: 300px;
+	margin: 24px 0 16px;
+}
+
+.contacts__links {
+	margin-top: 51px;
+	display: flex;
+}
+
+.contacts__link {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 26px;
+	color: #ffffff;
+	background: #30333B;
+
+	width: 180px;
+	height: 60px;
+	border: none;
+	padding: 0;
+	margin-right: 15px;
+
+	transition: all .1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contacts__link:hover {
+	cursor: pointer;
+	background-color: #444853;;
+}
+
+.contacts__link:last-child {
+	margin-right: 0;
+}
+
+.contacts__icon {
+	color: #6A6F7D;
+	font-size: 24px;
+}
+
+.contacts__icon {
+	font-size: 18px;
+	line-height: 21px;
+	margin-right: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+	.contacts {
+		flex-direction: column-reverse;
+	}
+
+	.contacts__container {
+		width: 100%;
+        padding: 46px 20px 50px;
+	}
+
+	.contacts__time-container {
+		display: inline-flex;
+	}
+
+	.contacts__phone {
+		display: inline-block;
+	}
+
+	.contacts__image {
+		top: auto;
+		left: auto;
+		bottom: 52px;
+		right: 23px;
+	}
+
+	.contacts__map {
+		max-width: 100%;
+	}
+
+	.contacts__location {
+		display: inline-flex;
+		margin: 0 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.contacts__image {
+		width: 96px;
+		top: 54px;
+		right: 15px;
+	}
+
+	.contacts__map {
+		min-height: 460px;
+	}
+
+	.contacts__location {
+		margin: 25px 0 17px;
+	}
+}

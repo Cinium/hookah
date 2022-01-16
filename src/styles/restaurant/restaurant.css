@@ -1,0 +1,99 @@
+.restaurant {
+	padding: 65px 0;
+
+	background-image: linear-gradient(
+			90deg,
+			#30333b 44.39%,
+			rgba(48, 51, 59, 0.51) 100%
+		),
+		url('../../images/restaurant/restaurantBackground.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+.restaurant__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.restaurant__title {
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 34px;
+	color: #ffffff;
+	margin: 0 0 20px;
+}
+
+.restaurant__text {
+	max-width: 686px;
+}
+
+.restaurant__subtitle {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 26px;
+	color: #c8cdd8;
+	margin: 0;
+}
+
+.restaurant__button {
+	padding: 21px 29px 19px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 21px;
+	color: #FFFFFF;
+	background: #6c525b;
+	border: none;
+
+	transition: all .1s;
+}
+
+.restaurant__button:hover {
+	cursor: pointer;
+	background-color: #846A73;
+}
+
+@media screen and (max-width: 1200px) {
+	.restaurant {
+		padding: 45px 20px 50px;
+	}
+
+	.restaurant__title {
+		font-size: 22px;
+		line-height: 32px;
+		margin-bottom: 11px;
+		max-width: 364px;
+	}
+
+	.restaurant__text {
+		max-width: 427px;
+	}
+
+	.restaurant__subtitle {
+		font-size: 15px;
+		line-height: 22px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.restaurant__container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.restaurant__text {
+		margin-bottom: 33px;
+	}
+}

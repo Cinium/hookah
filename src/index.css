@@ -1,0 +1,19 @@
+@import url('./styles/body/body.css');
+
+@import url('./styles/logo/logo.css');
+@import url('./styles/title/title.css');
+@import url('./styles/title/title_dark.css');
+@import url('./styles/paragraph/paragraph.css');
+@import url('./styles/burger-menu/burger-menu.css');
+@import url('./styles/scroll-button/scroll-button.css');
+@import url('./styles/gallery/gallery.css');
+@import url('./styles/header/header.css');
+@import url('./styles/about/about.css');
+@import url('./styles/interior/interior.css');
+@import url('./styles/menu/menu.css');
+@import url('./styles/menu-item/menu-card.css');
+@import url('./styles/advantages/advantages.css');
+@import url('./styles/news/news.css');
+@import url('./styles/news-card/news-card.css');
+@import url('./styles/restaurant/restaurant.css');
+@import url('./styles/contacts/contacts.css');
