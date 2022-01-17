@@ -74,23 +74,18 @@ function showTab(e) {
 
 // mobile func
 function checkIfMobile() {
-	if (window.innerWidth >= 1200) {
+	if (window.innerWidth >= 1130) {
 		burgerMenu.style.display = 'none';
 		headerDesktopNav.style.display = 'block';
 		document.querySelector('.header__socials').style.display = 'flex';
 	} else if (window.innerWidth < 1130 && window.innerWidth > 768) {
 		burgerMenu.style.display = 'block';
 		headerDesktopNav.style.display = 'none';
-		burgerMenu
-			.querySelector('.header__socials')
-			.classList.add('header__socials_hidden');
+		document.querySelector('.header__socials_desktop').style.display = 'flex';
+		burgerMenu.querySelector('.header__socials').style.display = 'none';
 	} else {
-		burgerMenu
-			.querySelector('.header__socials')
-			.classList.remove('header__socials_hidden');
-		document
-			.querySelector('.header__socials_desktop')
-			.classList.add('header__socials_hidden');
+		burgerMenu.querySelector('.header__socials').style.display = 'flex';
+		document.querySelector('.header__socials_desktop').style.display = 'none';
 		document
 			.querySelectorAll('.menu__cards')
 			.forEach(menu => menu.classList.add('gallery'));
