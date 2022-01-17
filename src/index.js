@@ -1,5 +1,68 @@
-import NewsCard from './script/NewsCard.js';
-import news from './script/utils/newsData.js';
+class NewsCard {
+	constructor(data, templateSelector) {
+		this._data = data;
+		this._title = data.title;
+		this._date = data.date;
+		this._image = data.image;
+		this._templateSelector = templateSelector;
+	}
+
+	generateCard() {
+		this._element = this._getTemplate();
+
+		this._titleElement = this._element.querySelector('.news-card__title');
+		this._dateElement = this._element.querySelector('.news-card__date');
+		this._imageElement = this._element.querySelector('.news-card__image');
+
+		this._titleElement.textContent = this._title;
+		this._dateElement.textContent = this._date;
+		this._imageElement.src = this._image;
+
+		return this._element;
+	}
+
+	_getTemplate() {
+		const cardElement = document
+			.querySelector(this._templateSelector)
+			.content.querySelector('.news-card')
+			.cloneNode(true);
+
+		return cardElement;
+	}
+}
+
+const news = [
+	{
+		title: 'Наш курительный клуб ежедневно работает с 16:00',
+		date: '8 апреля',
+		image: 'src/images/news/1.png'
+	},
+	{
+		title: 'Дорогие гости, по выходным наш курительный клуб работает до 4 утра',
+		date: '24 марта',
+		image: 'src/images/news/2.png'
+	},
+	{
+		title: 'Готовимся к вечеру с сигарами Davidoff',
+		date: '12 марта',
+		image: 'src/images/news/3.png'
+	},
+	{
+		title: 'Наш курительный клуб ежедневно работает с 16:00',
+		date: '8 апреля',
+		image: 'src/images/news/1.png'
+	},
+	{
+		title: 'Дорогие гости, по выходным наш курительный клуб работает до 4 утра',
+		date: '24 марта',
+		image: 'src/images/news/2.png'
+	},
+	{
+		title: 'Готовимся к вечеру с сигарами Davidoff',
+		date: '12 марта',
+		image: 'src/images/news/3.png'
+	},
+]
 
 // --- VARIABLES ---
 
